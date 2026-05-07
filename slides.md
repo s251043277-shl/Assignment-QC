@@ -133,3 +133,37 @@ The work done $W$ is positive when the system expands against an external pressu
 
 # Bibliography
 <div id="refs"></div>
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Distribution of Math Scores
+This histogram illustrates the distribution of Math scores from the `bigclass` dataset. Most students' Math scores appear to fall within the mid-range.
+
+**Key Observations:**
+- The distribution appears to be somewhat normal, with a peak around the average scores.
+- There might be some outliers or specific clusters that can be further investigated.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/math_scores_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Distribution of Verbal Scores
+This histogram illustrates the distribution of Verbal scores from the `bigclass` dataset. Similar to Math scores, Verbal scores also tend to be concentrated in the mid-range.
+
+**Key Observations:**
+- The distribution shows a central tendency, indicating that most students perform similarly in Verbal.
+- Any deviations or specific groupings could be due to various factors like learning styles or curriculum focus.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/verbal_scores_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
