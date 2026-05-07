@@ -167,3 +167,20 @@ This histogram illustrates the distribution of Verbal scores from the `bigclass`
 <iframe data-src='media/plots/verbal_scores_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Distribution of Math Scores
+This histogram illustrates the distribution of Math scores from the `bigclass` dataset. Most students' Math scores appear to fall within the mid-range.
+
+**Key Observations:**
+- The distribution appears to be somewhat normal, with a peak around the average scores.
+- There might be some outliers or specific clusters that can be further investigated.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/math_scores_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
