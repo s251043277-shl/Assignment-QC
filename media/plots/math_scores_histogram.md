@@ -1,24 +1,19 @@
 ```R
-library(tidyverse)
-library(plotly)
-library(htmlwidgets)
-
-plot_math_scores <- ggplot(bigclass, aes(x = Math)) +
-  geom_histogram(binwidth = 50, fill = '#0072B2', color = 'white', alpha = 0.8) +
-  labs(title = 'Distribution of Math Scores', x = 'Math Scores', y = 'Frequency') +
+# Create the histogram for Math Scores
+plot_obj <- ggplot(bigclass, aes(x = Math)) +
+  geom_histogram(binwidth = 50, fill = "#0072B2", color = "white", alpha = 0.8) +
+  labs(
+    title = "Distribution of Math Scores in Bigclass Dataset",
+    x = "Math Score",
+    y = "Frequency"
+  ) +
   theme_minimal() +
-  theme(
-    plot.title = element_text(size = 20, hjust = 0.5),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    axis.text.x = element_text(size = 14),
-    axis.text.y = element_text(size = 14),
-    panel.background = element_rect(fill = 'white', color = NA),
-    plot.background = element_rect(fill = 'white', color = NA)
-  )
+  theme(axis.title.x = element_text(size = 18),
+        axis.title.y = element_text(size = 18),
+        axis.text = element_text(size = 14),
+        panel.background = element_rect(fill = "white", colour = "white"))
 
-plotly_math_scores <- ggplotly(plot_math_scores)
-
-output_html_path <- "/content/project/media/plots/math_scores_histogram.html"
-saveWidget(plotly_math_scores, file = output_html_path, selfcontained = TRUE)
+# Convert to plotly object and save as HTML
+plotly_obj <- ggplotly(plot_obj)
+saveWidget(plotly_obj, "media/plots/math_scores_histogram.html", selfcontained = TRUE)
 ```

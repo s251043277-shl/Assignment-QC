@@ -184,3 +184,56 @@ This histogram illustrates the distribution of Math scores from the `bigclass` d
 <iframe data-src='media/plots/math_scores_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
 :::
 ::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Relationship Between Height and Weight
+This scatter plot visualizes the relationship between height and weight from the `bigclass` dataset, with points colored by sex. We can observe a general positive correlation: as height increases, weight also tends to increase.
+
+**Key Observations:**
+- There's a clear upward trend, indicating taller individuals generally weigh more.
+- There might be slight differences in the height-weight distribution between sexes.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/height_weight_scatter.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Age Distribution by Sex
+This violin plot illustrates the distribution of age, broken down by sex, within the `bigclass` dataset. Violin plots are useful for showing the distribution shape, density, and central tendency of data points.
+
+**Key Observations:**
+- The width of each violin indicates the density of age values at that point.
+- The white box inside each violin represents the interquartile range, with the white dot showing the median age for each sex.
+- We can observe and compare the spread and concentration of ages between male and female students.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/age_distribution_violin.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+### Distribution of Math Scores
+This histogram illustrates the distribution of Math scores from the `bigclass` dataset. Histograms are valuable for understanding the shape, central tendency, and spread of numerical data.
+
+**Key Observations:**
+- The bins show the frequency of students within different score ranges.
+- We can observe if the scores are clustered, skewed, or uniformly distributed.
+- This plot helps in identifying common performance levels and potential outliers.
+:::
+
+::: {.column width="50%"}
+<iframe data-src='media/plots/math_scores_histogram.html' width='100%' height='500px' style='border:none;'></iframe>
+:::
+::::
